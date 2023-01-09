@@ -40,7 +40,7 @@ const MainPage = (email, password) => {
   //"/:actionType/:gifId"
   const handleFavouriteClick = async (gifID) => {
     console.log("useremail click", userEmail);
-    const res = await fetch(`http://localhost:3000/search/favorite/${gifID}`, {
+    const res = await fetch(`https://giftrackerapi.onrender.com/search/favorite/${gifID}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const MainPage = (email, password) => {
   };
 
   const handleUsedClick = async (gifID) => {
-    const res = await fetch(`http://localhost:3000/search/used/${gifID}`, {
+    const res = await fetch(`https://giftrackerapi.onrender.com/search/used/${gifID}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

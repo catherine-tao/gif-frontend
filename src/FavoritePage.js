@@ -18,7 +18,7 @@ const FavoritePage = (email, password) => {
   const handleFavouriteClick = async () => {
     console.log("userEmail.", userEmail);
 
-    const res = await fetch(`http://localhost:3000/login/${userEmail}`, {
+    const res = await fetch(`https://giftrackerapi.onrender.com/login/${userEmail}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
