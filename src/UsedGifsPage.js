@@ -68,7 +68,7 @@ const UsedGifsPage = (email, password) => {
   const handleUsedClick = async (gifID) => {
     // setUpdateUsed((count) => count + 1);
     console.log("used");
-    const res = await fetch(`http://localhost:3000/search/used/${gifID}`, {
+    const res = await fetch(`https://giftrackerapi.onrender.com/search/used/${gifID}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

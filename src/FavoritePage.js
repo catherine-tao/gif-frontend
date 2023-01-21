@@ -67,7 +67,7 @@ const FavoritePage = (email, password) => {
   const handleUnfavouriteClick = async (gifID) => {
     console.log("useremail click", userEmail);
     const res = await fetch(
-      `http://localhost:3000/search/unfavorite/${gifID}`,
+      `https://giftrackerapi.onrender.com/search/unfavorite/${gifID}`,
       {
         method: "PATCH",
         headers: {
